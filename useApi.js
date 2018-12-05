@@ -1,6 +1,7 @@
+let password = '';
 //登录
 let login = async () => {
-    let res = await axios.get(`/login/cellphone?phone=18030721892&password=zt0440jd31&timestamp=${Math.random()}`, {
+    let res = await axios.get(`/login/cellphone?phone=18030721892&password=${password}&timestamp=${Math.random()}`, {
         baseURL: 'http://localhost:3000'
     })
     let data = { res };
